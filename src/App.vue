@@ -2,18 +2,12 @@
   <v-app id="inspire">
     <v-main class="d-flex align-center">
       <v-container>
-        <v-row
-          class="container d-flex justify-center"
+        <v-card
+          elevation="6"
+          shaped
         >
-          <v-col lg="8">
-            <v-card
-              elevation="6"
-              shaped
-            >
-              <router-view />
-            </v-card>
-          </v-col>
-        </v-row>
+          <router-view />
+        </v-card>
       </v-container>
     </v-main>
   </v-app>
