@@ -1,10 +1,23 @@
 <template>
   <div>
-    <v-card-title class="d-flex flex-column align-start pl-7 pr-7">
+    <v-card-title class="d-flex flex-column align-start pl-7 pr-16">
       KALKULATOR DLA HR I DECYDENTÓW
       <small>
         Czy opłaca się wspierać zdrowie psychiczne pracowników systemowo i kompleksowo?
       </small>
+      <a
+        href="https://eap24.pl"
+        title="eap24"
+        class="dialog-close"
+      >
+        <v-btn
+          color="black"
+          fab
+          text
+        >
+          <v-icon>fas fa-times</v-icon>
+        </v-btn>
+      </a>
     </v-card-title>
     <v-divider />
     <v-card-text class="pl-7 pr-7">
@@ -208,6 +221,7 @@ export default {
 <style
   lang="scss"
 >
+
 h3 {
   margin: 40px 0 0;
 }
@@ -235,4 +249,11 @@ a {
 .bigger-input-font input, .bigger-input-font .append {
   font-size: 20px !important;
 }
+
+.dialog-close {
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+}
+
 </style>
