@@ -155,13 +155,13 @@
 
 <script>
 import rules from '@/utils/validationRules';
-import CalcFactory from '@/factories/CalcFormFactory';
+import CalcFormFactory from '@/factories/CalcFormFactory';
 
 export default {
   name: 'Calc',
   data() {
     return {
-      formData: new CalcFactory(),
+      formData: new CalcFormFactory(),
       rules: rules
     };
   },

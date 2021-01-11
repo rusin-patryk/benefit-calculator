@@ -1,4 +1,4 @@
-export default class CalcFactory {
+export default class CalcFormFactory {
   constructor(employees, employeesWithProblems, reducedEfficiency, averageSalary) {
     this.employees = employees || 1000;
     this.employeesWithProblems = employeesWithProblems || 5;
