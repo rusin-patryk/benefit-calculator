@@ -15,17 +15,10 @@
 
 <style lang="scss">
 
-#inspire {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  background-image: url(assets/latarnia-eap24.jpg);
-  background-size: cover;
-}
+@import 'styles/main.scss';
 
-.container {
-  max-width: 1000px;
+#inspire {
+  background-image: url(assets/latarnia-eap24.jpg);
 }
 
 </style>

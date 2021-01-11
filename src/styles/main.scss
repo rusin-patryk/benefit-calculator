@@ -1,0 +1,46 @@
+#inspire {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: lightslategrey;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+h3 {
+  margin: 40px 0 0;
+}
+
+h4 {
+  min-height: 74px;
+  display: flex;
+  align-items: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+a {
+  color: #42b983;
+}
+
+.bigger-input-font input, .bigger-input-font .append {
+  font-size: 20px !important;
+}
+
+.dialog-close {
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+}
