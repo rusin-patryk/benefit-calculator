@@ -9,7 +9,7 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
-Vue.use(vueNumeralFilterInstaller, { locale: 'pl' });
+Vue.use(vueNumeralFilterInstaller, {locale: 'pl'});
 
 new Vue({
   router,
@@ -23,8 +23,9 @@ Vue.filter('separator', (value) => {
 });
 
 Vue.filter('validateCalc', (value, modifier) => {
-  value = parseInt(value, 10);
-  if (value < 1 || Number.isNaN(value)) {
+  value = value.replace('.', ',');
+  value = parseFloat(value);
+  if (value < 1) {
     value = 1;
     return value;
   }
@@ -43,4 +44,4 @@ Vue.filter('validateCalc', (value, modifier) => {
       console.error(`Cannot validate value: ${value}`);
   }
   return value;
-})
+});

@@ -15,7 +15,7 @@
         autocomplete="off"
         dense
         :rules="rules.isValidNumber"
-        v-model.number="formData.employees"
+        v-model="formData.employees"
       />
       <h4 class="pb-2">Procent pracowników, którzy mają problemy</h4>
       <v-text-field
