@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import vueNumeralFilterInstaller from 'vue-numeral-filter';
+import numeral from 'numeral';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
@@ -16,6 +17,10 @@ new Vue({
   vuetify,
   render: (h) => h(App),
 }).$mount('#app');
+
+Vue.filter('separator', (value) => {
+  return numeral(value).format('0,0');
+});
 
 Vue.filter('validateCalc', (value, modifier) => {
   value = parseInt(value, 10);

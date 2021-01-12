@@ -158,7 +158,7 @@ import rules from '@/utils/validationRules';
 import CalcFormFactory from '@/factories/CalcFormFactory';
 
 export default {
-  name: 'Calc',
+  name: 'CalcForm',
   data() {
     return {
       formData: new CalcFormFactory(),
