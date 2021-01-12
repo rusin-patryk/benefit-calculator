@@ -1,23 +1,36 @@
-# eap-calc
+# Benefit calculator
+
+A very simple application that calculates the costs of reducing the efficiency of employees who have personal problems. The app aims to promote psychological support for company employees.
+
+To run this app you will need [yarn dependency manager](https://classic.yarnpkg.com/en/docs/install/#windows-stable).
+
+After that install **Vue CLI** tool by run `yarn global add @vue/cli` in the console.
 
 ## Project setup
+
+### Dependencies install
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+vue-cli-service serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+vue-cli-service build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+vue-cli-service lint
+```
+
+### Runs unit tests
+```
+vue-cli-service test:unit
 ```
 
 ### Customize configuration
